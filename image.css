@@ -1,0 +1,21 @@
+*{
+    padding:0;
+    margin: 0;
+}
+@font-face {
+    font-family: inter;
+    src: url("inter.woff2");
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:#000000;
+    overflow-x: hidden;
+}
+.contact{
+    background-color: #345846;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
