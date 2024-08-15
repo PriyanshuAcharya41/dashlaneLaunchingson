@@ -29,24 +29,29 @@
 // //     c.innerHTML="hello"
 // // },5000)
 let tl=gsap.timeline();
+tl.from(".logo img",{
+    opacity:0,
+    duration:1.5,
+    
+})
 tl.from(".head1 h1",{
     y:500,
-    
+    opacity:0,
     duration:.7,
     ease: "circ.out",
     
 })
 tl.from(".head2 h1",{
-    
+    opacity:0,
     duration:.7,
     ease: "power1.out",
     y:1000,
 })
 tl.from(".head3 h2",{
-    
+    opacity:0,
     duration:.5,
     ease: "power1.out",
-    x:-1000,
+    x:1000,
     
 })
 tl.from(".button",{
@@ -65,11 +70,7 @@ tl.from(".head4 h5",{
     opacity:0,
     
 })
-tl.from(".logo img",{
-    opacity:0,
-    duration:1.5,
-    
-})
+
 
 gsap.from(".second",{
     
@@ -90,24 +91,25 @@ gsap.from(".second",{
 gsap.from(".contact_left",{
     
     y:0,
-    x:-200,
+    x:100,
     duration:1,
     scrollTrigger:{
         trigger:".contact_left",
-        start:800,
+        start:700,
         y:0,
+        x:200,
         scrub:1
     }
 })
-gsap.from(".contact_right",{
-    y:0,
-    x:200,
-    duration:1,
-    scrollTrigger:{
-        trigger:".contact_right",
-        start:800,
-        y:0,
+// gsap.from(".contact_right",{
+//     y:0,
+//     x:200,
+//     duration:1,
+//     scrollTrigger:{
+//         trigger:".contact_right",
+//         start:800,
+//         y:0,
         
-        scrub:1,
-    }
-})
+//         scrub:1,
+//     }
+// })

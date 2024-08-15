@@ -4,19 +4,21 @@
 }
 @font-face {
     font-family: inter;
-    src: url("inter.woff2");
+    src: url("Adamina-Regular.woff2");
 }
 body{
     height: 100vh;
     width: 100%;
-    background-color:#000000;
+    background-color:#ffffff;
     overflow-x: hidden;
     
 }
 .contact_page{
     width: 100%;
-    height: 100vh;
-    background-color: rgb(201, 224, 245);
+    max-height: 100%;
+    background-color: rgb(244, 245, 247);
+    padding-top:5vh;
+    padding-bottom: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +29,7 @@ body{
     height: 90vh;
     
     display: flex;
+    justify-content: space-around;
     
 }
 
@@ -34,9 +37,9 @@ body{
     font-family: inter;
     width: 50%;
     height: 100%;
-    background-color: #1C1919;
+    background-color: white;
     border-radius: 4%;
-    
+    margin-right: 2vw;
 
     .left1{
         width: 100%;
@@ -50,11 +53,11 @@ body{
             
         }
         h2{
-            color:#F3EEEE;
+            color:#05003B;
             padding-left: 7%;
         }
         p{
-            color: #F3EEEE;
+            color: #05003B;
             padding-left: 7%;
         }
     }
@@ -65,17 +68,17 @@ body{
 
         h2{
             padding-bottom: 2%;
-            color: white;
+            
             padding-left: 7%;
         }
         h4{
             padding-bottom: 4%;
             padding-top: 2%;
-            color:white;
+            color: #05003B;
             padding-left: 7%;
         }
         p{
-            color: #F3EEEE;
+            color: #00703A;
             padding-left: 7%;
         }
     }
@@ -107,13 +110,13 @@ body{
 .contact_right{
     width: 50%;
     height: 100%;
-    background-color: #1f1e1e;
+    background-color: rgb(255, 255, 255);
     font-family: inter;
     border-radius: 4%;
 
     
     h1{
-        color: rgb(136, 240, 132);
+        color: #05003B;
         text-align: center;
         margin-top: 10%;
         margin-bottom: 10%;
@@ -125,7 +128,7 @@ body{
     }
     iframe{
         width: 60%;
-        height: 300px;
+        height: 40vh;
         border-radius: 20px;
     }
 }
@@ -135,14 +138,25 @@ body{
 @media only screen and (max-width:580px){
     .contact_div{
         display: block;
-        
+        height: 100%;
     }
     .contact_left{
         width: 100%;
+        margin-top:5vh;
     }
     .contact_right{
+        
         width: 100%;
         height: 50%;
         margin-top: 10vh;
+        margin-bottom: 10vh;
+        iframe{
+            width: 90%;
+            height: 35vh;
+            border-radius: 20px;
+        }
+        h1{
+            padding-top: 3vh;
+        }
     }
 }

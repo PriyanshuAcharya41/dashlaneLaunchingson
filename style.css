@@ -4,18 +4,18 @@
 }
 @font-face {
     font-family: inter;
-    src: url("inter.woff2");
+    src: url("Adamina-Regular.woff2");
 }
 body{
     height: 100%;
     width: 100%;
-    background-color:#000000;
+    background-color:#fafafa;
     overflow-x: hidden;
 }
 .main{
     height: 100vh;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     display: block;
     align-content: center;
     text-align: center;
@@ -39,24 +39,24 @@ body{
     font-size: 3rem;
     font-family: inter;
     font-weight: 1000;
-    color: #F3EEEE;
+    color: #05003B;
 }
 .head2 h1{
     font-size: 3rem;
     font-family: inter;
     font-weight: 1000;
-    color: #F3EEEE;
+    color: #05003B;
     margin-bottom: 5vh;
 }
 .head3 h2{
     font-size: 2rem;
     font-family: inter;
     font-weight: 800;
-    color: #F3EEEE;
+    color: #00703A;
     margin-bottom: 1.3vh;
 }
 #corpo{
-    color:#ABFF84;
+    color:#00703A;
 
 }
 
@@ -67,10 +67,10 @@ body{
     width: 100%;
     
     button{
-        background-color: #ABFF84;
+        background-color: #05003B;
         height: 6vh;
         width: 10vw;
-        color: black;
+        color: rgb(255, 255, 255);
         border-radius: 5vw;
         font-size: 0.8rem;
         border-style: none;
@@ -86,7 +86,9 @@ body{
     
     /* background-color: black; */
     gap:1vw;
+    
 }
+
 
     .image img{
         height: 10vh;
@@ -97,6 +99,13 @@ body{
         transform: translateY(6%);
     }
 }
+#enquiry{
+    h1{
+        font-family: inter;
+        font-size: 0.9rem;
+        font-weight: 200;
+    }
+}
 .head4{
     margin-top: 1.3vh;
     display: flex;
@@ -104,7 +113,7 @@ body{
     
 }
 .head4 h5{
-    color: #F3EEEE;
+    color: #05003B;
     font-size: 1rem;
     font-family: inter;
 }
@@ -112,45 +121,43 @@ body{
 
 .second{
     font-family: inter;
-    height: 100vh;
+    max-height: 100%;
     width: 100%;
-    
-    background-image: url("second.webp");
-    background-color: #00000050;
-    background-size: cover;
-    
-    
-}
-.second_one{
-    background-color: rgba(0, 0, 0, 0.541);
-    height: 20%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h1{
-        font-family: inter;
-        font-size:3rem;
-        color: white;
-        
+    background-color: #ffffff;
+    .innerbutton{
+        display: flex;
+        justify-content: center;
+        button{
+            width: 15vw;
+            
+            h1{
+                font-family: inter;
+                font-size: 0.9rem;
+                font-weight: 200;
+            }
+        }
     }
+    
+    
 }
-.second_two{
+.secondone{
     display: flex;
     justify-content: center;
+}
+
+.secondtwo{
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.541);
-    height: 60%;
     
 }
 .aboutus{
-    height: 100%;
+    height: 80%;
+    margin-top: 4vh;
     width: 50%;
-    background-color: rgba(2, 2, 2, 0.644);
-    /* box-shadow: -10px -10px rgba(0, 0, 0, 0.253); */
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    color: white;
+    color: #05003B;
     overflow-y: auto;
     font-family: inter;
     h3{
@@ -163,19 +170,47 @@ body{
         align-content: center;
     }
     h3 span{
-        color: #ABFF84;
+        color: #00703A;
     }
 }
-.second_third{
-    background-color: rgba(0, 0, 0, 0.541);
-    height:15% ;
-    padding-top: 5vh;
+.aboutus_image{
+    height: 80vh;
+    width: 25%;
+    overflow: hidden;
+
+    
 }
+.about_image{
+    height: 32%;
+    width: 100%;
+    
+    margin-bottom: 2%;
+    
+    #image1{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    #image2{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    #image3{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        
+    }
+    
+}
+
+
 
 .contact_page{
     width: 100%;
     height: 100vh;
-    background-color: rgb(201, 224, 245);
+    background-color: rgb(244, 245, 247);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,82 +223,10 @@ body{
     display: flex;
     
 }
-
-.contact_left{
-    font-family: inter;
-    width: 50%;
-    height: 100%;
-    background-color: #1C1919;
-    border-radius: 4%;
-    
-
-    .left1{
-        width: 100%;
-        height: 20%;
-        
-        
-
-        h1{
-            padding-top: 7%;
-            
-            
-        }
-        h2{
-            color:#F3EEEE;
-            padding-left: 7%;
-        }
-        p{
-            color: #F3EEEE;
-            padding-left: 7%;
-        }
-    }
-    .left2{
-        width: 100%;
-        height: 60%;
-        
-
-        h2{
-            padding-bottom: 2%;
-            color: white;
-            padding-left: 7%;
-        }
-        h4{
-            padding-bottom: 4%;
-            padding-top: 2%;
-            color:white;
-            padding-left: 7%;
-        }
-        p{
-            color: #F3EEEE;
-            padding-left: 7%;
-        }
-    }
-    .left3{
-        width: 100%;
-        height: 20%;
-        
-
-        .btn1{
-            /* display: flex;
-            justify-content: center; */
-            padding-top: 35px;
-            padding-left: 25%;
-        }
-        .btn1 button{
-            width: 60%;
-            height: 50px;
-            background-color: #F3EEEE;
-            border-style: none;
-            border-radius: 30px;
-
-            h1{
-                font-size: 1.2 rem;
-            }
-            
-        }
-    }
+#enquire2{
+    margin-bottom: 4vh;
 }
-.contact_right{
+/* .contact_right{
     width: 50%;
     height: 100%;
     background-color: #ffffff;
@@ -318,7 +281,7 @@ body{
                 height: 70px;
                 width: 80%;
                 text-align: center;
-                /* margin-left: 30%; */
+                margin-left: 30%;
             }
             
         }
@@ -357,7 +320,82 @@ body{
         
     }
     
+} */
+.contact_left{
+    font-family: inter;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4%;
+    
+
+    .left1{
+        width: 100%;
+        height: 20%;
+        
+        
+
+        h1{
+            padding-top: 7%;
+            
+            
+        }
+        h2{
+            color:#05003B;
+            padding-left: 7%;
+        }
+        p{
+            color: #05003B;
+            padding-left: 7%;
+        }
+    }
+    .left2{
+        width: 100%;
+        height: 60%;
+        
+
+        h2{
+            padding-bottom: 2%;
+            
+            padding-left: 7%;
+        }
+        h4{
+            padding-bottom: 4%;
+            padding-top: 2%;
+            color: #05003B;
+            padding-left: 7%;
+        }
+        p{
+            color: #00703A;
+            padding-left: 7%;
+        }
+    }
+    .left3{
+        width: 100%;
+        height: 20%;
+        
+
+        .btn1{
+            /* display: flex;
+            justify-content: center; */
+            padding-top: 35px;
+            padding-left: 25%;
+        }
+        .btn1 button{
+            width: 60%;
+            height: 50px;
+            background-color: #F3EEEE;
+            border-style: none;
+            border-radius: 30px;
+
+            h1{
+                font-size: 1.2 rem;
+            }
+            
+        }
+    }
 }
+
 
 @media only screen and (max-width:580px) {
     body{
@@ -367,20 +405,21 @@ body{
         width:45vw;
     }
     .main{
+        
         display: block;
-        margin-top: 10vh;
+        
         padding-right: 100px;
         h1{
-            font-size: 1..5rem;
+            font-size: 1.5rem;
         }
         button h1{
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
         h2{
-            font-size: 2rem;
+            font-size: 1.3rem;
         }
         h5{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
     .logo{
@@ -389,14 +428,36 @@ body{
         width: 100%;
         align-items: center;
         
-        
         .inner_logo img{
             
             width: 50%;
         }
     }
+    .secondtwo{
+        display: grid;
+        text-align: justify;
+        margin-top: -10vh;
+    }
     .aboutus{
         width: 80%;
+        height: 80%;
+        place-self: center;
+    }
+    .aboutus_image{
+        height: 80vh;
+        width: 90%;
+        place-self: center;
+        overflow: hidden;
+    }
+    #enquire2{
+        button{
+            width: 50vw;
+            margin-top: 2vh;
+            
+        }
+    }
+    .about_image img{
+        width: 100%;
     }
 
 
