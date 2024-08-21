@@ -25,8 +25,8 @@ body{
 }
 .logo{
     
-    height: 35vh;
-    width: 17.5vw;
+    height: 85vh;
+    width: 38vw;
     border-radius: 50%;
     
     img{
@@ -36,20 +36,20 @@ body{
     }
 }
 .head1 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: inter;
     font-weight: 1000;
     color: #05003B;
 }
 .head2 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: inter;
     font-weight: 1000;
     color: #05003B;
     margin-bottom: 5vh;
 }
 .head3 h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: inter;
     font-weight: 800;
     color: #00703A;
@@ -72,7 +72,7 @@ body{
         width: 10vw;
         color: rgb(255, 255, 255);
         border-radius: 5vw;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         border-style: none;
 
         h1{
@@ -102,7 +102,7 @@ body{
 #enquiry{
     h1{
         font-family: inter;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 200;
     }
 }
@@ -114,7 +114,7 @@ body{
 }
 .head4 h5{
     color: #05003B;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: inter;
 }
 
@@ -428,13 +428,18 @@ body{
     .logo{
         display: flex;
         padding-top: 0vh;
+        height: 40vh;
         width: 100%;
+        margin-bottom: 10vh;
         align-items: center;
-        
-        .inner_logo img{
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        /* .inner_logo img{
             
             width: 50%;
-        }
+        } */
     }
     .secondtwo{
         display: grid;
